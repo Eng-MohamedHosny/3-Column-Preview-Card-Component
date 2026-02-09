@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,700&family=Lexend+Deca&display=swap");
+
+:root {
+  --gold-500: hsl(31, 77%, 52%);
+  --cyan-800: hsl(184, 100%, 22%);
+  --green-950: hsl(179, 100%, 13%);
+  /* ### Neutral */
+  /* (paragraphs)  */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --gray-100: hsl(0, 0%, 95%);
+
+  /* Font */
+
+  --big-shoulders-font: "Big Shoulders", sans-serif;
+  --text-preset-1: 4rem;
+  --line-height-1: 120%;
+  --fw-1: 700;
+
+  --text-preset-2: 1.5rem;
+  --line-height-2: 1.65;
+
+  /* Spacing scale */
+  --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-1000: 80px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  line-height: var(--line-height-2);
+  background: var(--gray-100);
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: grid;
+  max-width: 92.1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: auto;
+  border-radius: var(--spacing-100);
+  overflow: hidden;
+  margin-inline: 3rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.content .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+.item {
+  padding: var(--spacing-600);
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  justify-content: flex-start;
+}
+.item img {
+  width: 6.4rem;
+}
+.item h2 {
+  color: var(--gray-100);
+  font-family: var(--big-shoulders-font);
+  font-size: var(--text-preset-1);
+  font-weight: var(--fw-1);
+  line-height: var(--line-height-1);
+}
+.item p {
+  color: var(--transparent-white);
+}
+.item button {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  border-style: none;
+  border-radius: 2.5rem;
+  background: var(--gray-100);
+  color: var(--green-950);
+  min-height: 4.8rem;
+  width: 14.7rem;
+  margin-top: auto;
+  transition: all 0.1s ease;
+}
+.item button:hover {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+.sedan-section {
+  background: var(--gold-500);
+}
+.suv-section {
+  background: var(--cyan-800);
+}
+.luxury-section {
+  background: var(--green-950);
+}
+
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    max-width: 60.8rem;
+    margin-inline: 3.5rem;
+  }
+  main {
+    height: auto;
+    padding: var(--spacing-600) 0;
+    margin-inline: auto;
+  }
+  .item {
+    padding: 4.8rem 8rem;
+    gap: 2.4rem;
+  }
+  .content {
+    gap: var(--spacing-400);
+  }
+}
+@media (max-width: 375px) {
+  .card {
+    margin-inline: 2.4rem;
+  }
+  .item {
+    padding: 4.8rem;
+  }
+}
