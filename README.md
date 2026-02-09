@@ -2,7 +2,7 @@
 
 ## Overview
 This is my solution to the **3-column-preview-card-component** challenge from [Frontend Mentor](https://www.frontendmentor.io).  
-The goal of this challenge is to build an 3-column-preview-card-component as close as possible to the provided design.
+The goal of this challenge is to build a 3-column-preview-card-component as close as possible to the provided design.
 
 ### Screenshot
 <img src="./design/desktop-design.jpg" alt="3-column-preview-card-component Screenshot" width="600">
@@ -10,7 +10,7 @@ The goal of this challenge is to build an 3-column-preview-card-component as clo
 
 ### Links
 - Live Site: mentor-3-column-preview-card-componen.netlify.app
-- Repository: 
+- Repository: https://github.com/Eng-MohamedHosny/3-Column-Preview-Card-Component
 
 ---
 
