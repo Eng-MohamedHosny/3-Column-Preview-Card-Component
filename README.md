@@ -9,7 +9,7 @@ The goal of this challenge is to build a 3-column-preview-card-component as clos
 
 
 ### Links
-- Live Site: mentor-3-column-preview-card-componen.netlify.app
+- Live Site: https://eng-mohamedhosny.github.io/3-Column-Preview-Card-Component/
 - Repository: https://github.com/Eng-MohamedHosny/3-Column-Preview-Card-Component
 
 ---
